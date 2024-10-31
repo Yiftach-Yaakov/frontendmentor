@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Outfit';
+    font-weight: 100 900;
+    src: url(https://fonts.gstatic.com/s/outfit/v11/QGYvz_MVcBeNP4NJtEtqUYTkntBJ.woff2);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    height: min-content; 
+
+    & a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);   
+    height: 100vh;
+    display: block flex;
+    flex-direction: column;
+}
+
+.qr-code-component {
+    background-color: hsl(212, 45%, 89%);
+    display:flex;
+    align-items:center;
+    flex: 1;
+}
+
+.card{
+    margin: 0 auto;
+    width: 320px;
+    height: 500px;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.qr-image {
+    margin: 16px;
+    height: 288px;
+    width: 288px;
+    border-radius: 1em;
+}
+
+.qr-description {
+    font-family: "Outfit";
+    font-size: 15px;
+    text-align: center;
+    margin: 16px 0 0 0;      
+    padding: 0 28px;
+
+    & .title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 22px;
+        color: hsl(218, 44%, 22%);
+    }
+
+    & .paragraph {
+        font-weight: 400;
+        color: hsl(218, 44%, 22%);
+        color: hsl(216, 15%, 48%);
+    }
+}
